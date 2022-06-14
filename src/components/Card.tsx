@@ -7,13 +7,26 @@ interface CardProps {
 
 const Card: FC<CardProps> = ({name, image}) => {
     return (
-        <div className='card'>
-            <h3 className='card_title'>Pokemon: {name}</h3>
-            <div>
-                <img style={{
-                    maxHeight:"200px",
-                    width:"auto"
-                }} alt={name + " image"} src={image}/>
+        <div className='card_container'>
+            <div className='card'>
+                <div className='card_head'>
+                    <div>
+                        <h3 className='card_title'>{name}</h3>
+                    </div>
+                    <div className='card_hp'>
+                        <p className='card_hp'>HP</p>
+                        <p className='card_hp'>{1000}</p>
+                    </div>
+                </div>
+                <div className='card_image-container'>
+                    <div>
+                        <img className='card_image-container' style={{
+                            maxHeight:"200px",
+                            width:"auto",
+                            
+                        }} alt={name + " image"} src={image}/>
+                    </div>
+                </div>
             </div>
         </div>
     );

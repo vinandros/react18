@@ -24,7 +24,11 @@ function Home() {
       flexWrap:"wrap",
     }}>
         {           
-            pokemons.length > 0 ? pokemons.map((pokemon) => <Card key={pokemon.id} name={pokemon.name!} image={pokemon.image!} />):null
+            pokemons.length > 0 ? pokemons.map((pokemon) =>
+            
+              <Card key={pokemon.id} name={pokemon.name!} image={pokemon.image!} />
+           
+            ):null
         }
     </div>
   )

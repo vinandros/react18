@@ -17,7 +17,7 @@ function App() {
           };
         }}
       >
-       <h1>Testing new react features and libraries</h1>
+       <h1>PokeCards</h1>
       </NavLink>
      <nav
         style={{
