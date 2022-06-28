@@ -5,12 +5,13 @@
     margin: 5px 10px 10px 10px;
     min-width: 250px;
     height: 100%;
+    position: relative;
 
     &_container{
-       
         margin: 10px;
         border: 2px solid rgb(0, 0, 0);
         border-radius: 5px;
+        outline-style: double;
         &:hover{
             cursor: pointer;
         }
@@ -40,5 +41,20 @@
         justify-content: center;
         align-items: center;
         height: 75%;
+        padding: 10px;
+
+        &_blur{
+            filter: blur(8px);
+            z-index: -2;
+            position:absolute;
+            top: 33px;
+            left: 25px;
+            transform: scale(1.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75%;
+        }
+        
     }
 }

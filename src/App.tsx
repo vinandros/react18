@@ -5,11 +5,7 @@ function App() {
   return (
     <div>
       <NavLink 
-        to="/" 
-        // style={{
-        //   textDecoration:'none',
-        //   color:'#000'
-        // }}
+        to="/"
         style={({ isActive }) => {
           return {
             textDecoration: 'none',
@@ -17,7 +13,7 @@ function App() {
           };
         }}
       >
-       <h1>PokeCards</h1>
+       <h1 className='App_title'>PokeCards</h1>
       </NavLink>
      <nav
         style={{
