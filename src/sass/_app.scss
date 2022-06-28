@@ -1,13 +1,23 @@
-.app{
-    &_container {
-        max-width: 80vw;
-        margin: 0 auto;
-    }
-    &_title {
-        font-family: 'Potta One', cursive;
-        font-size: 37px;
-        margin: 0;
-        padding: 0;
-    }
+@import './utilities/responsive';
+@import './utilities/others';
 
+.app {
+  &_container {
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+    @include tablet {
+      max-width: 80vw;
+    }
+  }
+  &_title {
+    font-family: 'Potta One', cursive;
+    font-size: 37px;
+    margin: 0;
+    padding: 0;
+  }
+  &_main {
+    width: 100%;
+    @include flex-center;
+  }
 }

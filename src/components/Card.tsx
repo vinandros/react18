@@ -13,8 +13,7 @@ const Card: FC<CardProps> = ({ name, image }) => {
             style={{
               overflow: 'hidden',
               maxWidth: '200px'
-            }}
-          >
+            }}>
             <img
               className="card_image-container"
               style={{

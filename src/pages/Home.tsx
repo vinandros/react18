@@ -15,16 +15,10 @@ function Home() {
       console.log(pokemons);
     }
     fetchData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap'
-      }}
-    >
+    <div>
       {pokemons.length > 0
         ? pokemons.map((pokemon) => (
             <Card key={pokemon.id} name={pokemon.name!} image={pokemon.image!} />
