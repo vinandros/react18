@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function pokemon() {
-  return (
-    <h1>pokemon</h1>
-  )
+  return <h1>pokemon</h1>;
 }
 
-export default pokemon
+export default pokemon;

@@ -1,10 +1,10 @@
-import React from 'react'
-import App from './App'
-import { Routes, Route } from "react-router-dom";
-import Profile from './pages/Profile'
-import Pokemon from './pages/Pokemon'
-import Home from './pages/Home'
-import ReduxCounter from './pages/ReduxCounter'
+import React from 'react';
+import App from './App';
+import { Routes, Route } from 'react-router-dom';
+import Profile from './pages/Profile';
+import Pokemon from './pages/Pokemon';
+import Home from './pages/Home';
+import ReduxCounter from './pages/ReduxCounter';
 
 function RoutesRoot() {
   return (
@@ -17,14 +17,14 @@ function RoutesRoot() {
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
+            <main style={{ padding: '1rem' }}>
               <p>There's nothing here!</p>
             </main>
           }
         />
       </Route>
     </Routes>
-  )
+  );
 }
 
-export default RoutesRoot
+export default RoutesRoot;

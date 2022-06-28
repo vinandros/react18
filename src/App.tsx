@@ -1,28 +1,27 @@
 import React from 'react';
-import { NavLink, Link, Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='app_container'>
-      <NavLink 
+    <div className="app_container">
+      <NavLink
         to="/"
         style={({ isActive }) => {
           return {
             textDecoration: 'none',
-            color: isActive ? "#064663" : "#000",
+            color: isActive ? '#064663' : '#000'
           };
         }}
       >
-       <h1 className='app_title'>PokeCards</h1>
+        <h1 className="app_title">PokeCards</h1>
       </NavLink>
-     <nav
+      <nav
         style={{
-          borderBottom: "solid 1px",
-          paddingBottom: "1rem",
+          borderBottom: 'solid 1px',
+          paddingBottom: '1rem'
         }}
       >
-        <Link to="/profile">Profile</Link> |{" "}
-        <Link to="/pokemon">Pokemon</Link> |{" "}
+        <Link to="/profile">Profile</Link> | <Link to="/pokemon">Pokemon</Link> |{' '}
         <Link to="/counter">Redux counter</Link>
       </nav>
       <Outlet />
