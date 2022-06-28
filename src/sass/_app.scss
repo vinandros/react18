@@ -1,8 +1,13 @@
-.App{
+.app{
+    &_container {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
     &_title {
         font-family: 'Potta One', cursive;
         font-size: 37px;
         margin: 0;
         padding: 0;
     }
+
 }

@@ -3,7 +3,7 @@ import { NavLink, Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className='app_container'>
       <NavLink 
         to="/"
         style={({ isActive }) => {
@@ -13,7 +13,7 @@ function App() {
           };
         }}
       >
-       <h1 className='App_title'>PokeCards</h1>
+       <h1 className='app_title'>PokeCards</h1>
       </NavLink>
      <nav
         style={{
